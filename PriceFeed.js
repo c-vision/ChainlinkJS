@@ -8,6 +8,7 @@ var jsonFile = "./AggregatorV3Interface.json";
 var parsed = JSON.parse(fs.readFileSync(jsonFile));
 var aggregatorV3InterfaceABI = parsed.abi;
 
+// ChainLink USD/ETH Oracle on Kovan Network
 const addr = "0x9326BFA02ADD2366b30bacB125260Af641031331";
 
 var decimals = 0;
