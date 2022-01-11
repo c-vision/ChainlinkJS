@@ -14,5 +14,9 @@
     "chainlink"
   ],
   "author": "Gaetano Minardi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "web3": "^1.6.1"
+  }
 }

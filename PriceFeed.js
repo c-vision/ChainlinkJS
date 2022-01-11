@@ -1,9 +1,10 @@
-var fs = require('fs');
+require('dotenv').config()
+const fs = require('fs');
 const Web3 = require('web3')
 
-const web3 = new Web3("https://kovan.infura.io/v3/a38fa3ea997e4691b62281a9d610d0c7");
+const web3 = new Web3("https://kovan.infura.io/v3/" + process.env.INFURA);
 
-var jsonFile = "./build/contracts/AggregatorV3Interface.json";
+var jsonFile = "./AggregatorV3Interface.json";
 var parsed = JSON.parse(fs.readFileSync(jsonFile));
 var aggregatorV3InterfaceABI = parsed.abi;
 
